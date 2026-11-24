@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rlps-hsic"
+version = "1.0.0"
+description = "RLPS for resource-efficient hyperspectral image classification"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.23,<3",
+  "scipy>=1.9",
+  "scikit-learn>=1.2",
+  "torch>=1.12",
+  "tqdm>=4.64",
+]
+
+[tool.setuptools.packages.find]
+include = ["rlps*"]
